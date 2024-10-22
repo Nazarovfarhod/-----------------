@@ -1,0 +1,62 @@
+@import '../../utils/variables.scss';
+
+.years {
+  display: flex;
+  font-size: $font-size-large;
+  font-weight: $font-weight-bold;
+  line-height: 160px;
+  letter-spacing: -4px;
+  width: fit-content;
+  margin: 90px 0 0 217px;
+  padding-right: $padding-medium;
+  box-sizing: border-box;
+  gap: $gap-large;
+
+  &__dateStart,
+  &__dateEnd {
+    margin: 0;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+  }
+
+  &__dateStart {
+    color: $color-primary;
+  }
+
+  &__dateEnd {
+    color: $color-secondary;
+  }
+
+  @media (max-width: 1400px) {
+    margin-left: auto;
+  }
+
+  @media (max-width: 1100px) {
+    padding: 0 $padding-small;
+    width: 100%;
+    margin-left: 0;
+    gap: 0;
+    justify-content: space-between;
+  }
+
+  @media (max-width: 1023px) {
+    font-size: $font-size-medium;
+    width: fit-content;
+    margin-left: auto;
+    padding-right: $padding-medium;
+    box-sizing: border-box;
+    gap: $gap-large;
+  }
+
+  @media (max-width: 767px) {
+    font-size: $font-size-small;
+    gap: 0;
+    padding: 0;
+    letter-spacing: -1.12px;
+    width: 270px;
+    margin: 56px auto 59px;
+    justify-content: space-between;
+    line-height: normal;
+  }
+}
